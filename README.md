@@ -5,4 +5,6 @@ calendar_first_code.html = プログラミング初心者の時に割と初め�
 
 calendar_refactoring_v1.html = calendar_first_code.htmlのリファクタリング版（ただまとめて短くしただけ）
 
+↓表示イメージ
+
 ![calendar_image](calendar_image.png)
