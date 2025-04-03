@@ -1,0 +1,140 @@
+<html>
+	<head>
+		<style>.cal0{width:20px;font-size: 10px;}.youbi{width:20px;font-size: 10px;}</style>
+
+	</head>
+	<body onload="setTimeout('cale()',1000)">
+<script type="text/javascript">
+function cale(){
+y = new Date().getFullYear();
+n = new Date().getMonth();
+d = new Date().getDate();
+v = new Date().getDay();
+
+n = n + 1	;
+if(n < 10){
+n = ("0" + n);
+}
+
+kek = -1-v+d-(7 * Math.ceil(((d-v)+6)/7) );
+
+uruuar= new Array(31,28,31,30,31,30,31,31,30,31,30,31); 
+
+if (((y%4)==0 && (y%100)!=0) || (y%400)==0)
+{ 
+	uruuar[1] = 29; 
+} 
+
+uruu = uruuar[n-1];
+
+if(n==1){
+premo = 31;
+}
+else{
+premo = uruuar[n-2] ;
+}
+
+timo = 0;
+
+
+x = 1;
+y = 1;
+xt = 0;
+
+for (x = 1; x < 22; x++) {
+	if (x%7 != 0){xt=x%7;}else{xt=7;}		
+	if(kek+x>0){
+		document.getElementById("screencal" + y + xt).value = ( kek+x );}
+	else{
+		document.getElementById("screencal" + y + xt).value = ( kek+x+premo );}
+	if(x%7 == 0){y=y+1;}
+}
+
+for (x = 22; x < 29; x++) {
+	if (x%7 != 0){xt=x%7;}else{xt=7;}	
+	document.getElementById("screencal4" + xt).value = ( kek+x );
+	if(x%7 == 0){y=y+1;}
+}
+for (x = 29; x < 50; x++) {
+	if (x%7 != 0){xt=x%7;}else{xt=7;}		
+	if(kek+x<=uruu){
+		timo = x;
+		document.getElementById("screencal" + y + xt).value = ( kek+x );}
+	else{
+		document.getElementById("screencal" + y + xt).value = ( -timo+x );}
+	if(x%7 == 0){y=y+1;}
+}
+
+}
+
+</script>
+
+
+<form id="formcal"  class="c_formcal" >
+	<input class="youbi" type="text"  value="日" >
+	<input class="youbi" type="text"  value="月" >
+	<input class="youbi" type="text"  value="火" >
+	<input class="youbi" type="text"  value="水" >
+	<input class="youbi" type="text"  value="木" >
+	<input class="youbi" type="text"  value="金" >
+	<input class="youbi" type="text"  value="土" >
+<br>
+	<input class="cal0" type="text" id="screencal11" value="" >
+	<input class="cal0" type="text" id="screencal12" value="" >
+	<input class="cal0" type="text" id="screencal13" value="" >
+	<input class="cal0" type="text" id="screencal14" value="" >
+	<input class="cal0" type="text" id="screencal15" value="" >
+	<input class="cal0" type="text" id="screencal16" value="" >
+	<input class="cal0" type="text" id="screencal17" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal21" value="" >
+	<input class="cal0" type="text" id="screencal22" value="" >
+	<input class="cal0" type="text" id="screencal23" value="" >
+	<input class="cal0" type="text" id="screencal24" value="" >
+	<input class="cal0" type="text" id="screencal25" value="" >
+	<input class="cal0" type="text" id="screencal26" value="" >
+	<input class="cal0" type="text" id="screencal27" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal31" value="" >
+	<input class="cal0" type="text" id="screencal32" value="" >
+	<input class="cal0" type="text" id="screencal33" value="" >
+	<input class="cal0" type="text" id="screencal34" value="" >
+	<input class="cal0" type="text" id="screencal35" value="" >
+	<input class="cal0" type="text" id="screencal36" value="" >
+	<input class="cal0" type="text" id="screencal37" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal41" value="" >
+	<input class="cal0" type="text" id="screencal42" value="" >
+	<input class="cal0" type="text" id="screencal43" value="" >
+	<input class="cal0" type="text" id="screencal44" value="" >
+	<input class="cal0" type="text" id="screencal45" value="" >
+	<input class="cal0" type="text" id="screencal46" value="" >
+	<input class="cal0" type="text" id="screencal47" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal51" value="" >
+	<input class="cal0" type="text" id="screencal52" value="" >
+	<input class="cal0" type="text" id="screencal53" value="" >
+	<input class="cal0" type="text" id="screencal54" value="" >
+	<input class="cal0" type="text" id="screencal55" value="" >
+	<input class="cal0" type="text" id="screencal56" value="" >
+	<input class="cal0" type="text" id="screencal57" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal61" value="" >
+	<input class="cal0" type="text" id="screencal62" value="" >
+	<input class="cal0" type="text" id="screencal63" value="" >
+	<input class="cal0" type="text" id="screencal64" value="" >
+	<input class="cal0" type="text" id="screencal65" value="" >
+	<input class="cal0" type="text" id="screencal66" value="" >
+	<input class="cal0" type="text" id="screencal67" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal71" value="" >
+	<input class="cal0" type="text" id="screencal72" value="" >
+	<input class="cal0" type="text" id="screencal73" value="" >
+	<input class="cal0" type="text" id="screencal74" value="" >
+	<input class="cal0" type="text" id="screencal75" value="" >
+	<input class="cal0" type="text" id="screencal76" value="" >
+	<input class="cal0" type="text" id="screencal77" value="" >
+<br>
+</form>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<html>
+	<head>
+		<style>.cal0{width:20px;font-size: 10px;}.youbi{width:20px;font-size: 10px;}</style>
+
+	</head>
+	<body onload="setTimeout('cale()',1000)">
+		
+<script type="text/javascript">
+function cale(){
+y = new Date().getFullYear();
+n = new Date().getMonth();
+d = new Date().getDate();
+v = new Date().getDay();
+
+n = n + 1	;
+if(n < 10){
+n = ("0" + n);
+}
+
+kek = -1-v+d-(7 * Math.ceil(((d-v)+6)/7) );
+
+uruuar= new Array(31,28,31,30,31,30,31,31,30,31,30,31); 
+
+if (((y%4)==0 && (y%100)!=0) || (y%400)==0)
+{ 
+	uruuar[1] = 29; 
+} 
+
+uruu = uruuar[n-1];
+
+if(n==1){
+premo = 31;
+}
+else{
+premo = uruuar[n-2] ;
+}
+
+timo = 0;
+
+
+if(kek+1>0){
+document.getElementById("screencal11").value = ( kek+1 );}
+else{
+document.getElementById("screencal11").value = ( kek+1+premo );}
+if(kek+2>0){
+document.getElementById("screencal12").value = ( kek+2 );}
+else{
+document.getElementById("screencal12").value = ( kek+2+premo );}
+if(kek+3>0){
+document.getElementById("screencal13").value = ( kek+3 );}
+else{
+document.getElementById("screencal13").value = ( kek+3+premo );}
+if(kek+4>0){
+document.getElementById("screencal14").value = ( kek+4 );}
+else{
+document.getElementById("screencal14").value = ( kek+4+premo );}
+if(kek+5>0){
+document.getElementById("screencal15").value = ( kek+5 );}
+else{
+document.getElementById("screencal15").value = ( kek+5+premo );}
+if(kek+6>0){
+document.getElementById("screencal16").value = ( kek+6 );}
+else{
+document.getElementById("screencal16").value = ( kek+6+premo );}
+if(kek+7>0){
+document.getElementById("screencal17").value = ( kek+7 );}
+else{
+document.getElementById("screencal17").value = ( kek+7+premo );}
+
+if(kek+8>0){
+document.getElementById("screencal21").value = ( kek+8 );}
+else{
+document.getElementById("screencal21").value = ( kek+8+premo );}
+if(kek+9>0){
+document.getElementById("screencal22").value = ( kek+9 );}
+else{
+document.getElementById("screencal22").value = ( kek+9+premo );}
+if(kek+10>0){
+document.getElementById("screencal23").value = ( kek+10 );}
+else{
+document.getElementById("screencal23").value = ( kek+10+premo );}
+if(kek+11>0){
+document.getElementById("screencal24").value = ( kek+11 );}
+else{
+document.getElementById("screencal24").value = ( kek+11+premo );}
+if(kek+12>0){
+document.getElementById("screencal25").value = ( kek+12 );}
+else{
+document.getElementById("screencal25").value = ( kek+12+premo );}
+if(kek+13>0){
+document.getElementById("screencal26").value = ( kek+13 );}
+else{
+document.getElementById("screencal26").value = ( kek+13+premo );}
+if(kek+14>0){
+document.getElementById("screencal27").value = ( kek+14 );}
+else{
+document.getElementById("screencal27").value = ( kek+14+premo );}
+
+
+if(kek+15>0){
+document.getElementById("screencal31").value = ( kek+15 );}
+else{
+document.getElementById("screencal31").value = ( kek+15+premo );}
+if(kek+16>0){
+document.getElementById("screencal32").value = ( kek+16 );}
+else{
+document.getElementById("screencal32").value = ( kek+16+premo );}
+if(kek+17>0){
+document.getElementById("screencal33").value = ( kek+17 );}
+else{
+document.getElementById("screencal33").value = ( kek+17+premo );}
+if(kek+18>0){
+document.getElementById("screencal34").value = ( kek+18 );}
+else{
+document.getElementById("screencal34").value = ( kek+18+premo );}
+if(kek+19>0){
+document.getElementById("screencal35").value = ( kek+19 );}
+else{
+document.getElementById("screencal35").value = ( kek+19+premo );}
+if(kek+20>0){
+document.getElementById("screencal36").value = ( kek+20 );}
+else{
+document.getElementById("screencal36").value = ( kek+20+premo );}
+if(kek+21>0){
+document.getElementById("screencal37").value = ( kek+21 );}
+else{
+document.getElementById("screencal37").value = ( kek+21+premo );}
+
+
+
+document.getElementById("screencal41").value = ( kek+22 );
+document.getElementById("screencal42").value = ( kek+23 );
+document.getElementById("screencal43").value = ( kek+24 );
+document.getElementById("screencal44").value = ( kek+25 );
+document.getElementById("screencal45").value = ( kek+26 );
+document.getElementById("screencal46").value = ( kek+27 );
+document.getElementById("screencal47").value = ( kek+28 );
+
+if(kek+29<=uruu){
+timo = 29;
+document.getElementById("screencal51").value = ( kek+29 );}
+else{
+document.getElementById("screencal51").value = ( -timo+29 );}
+if(kek+30<=uruu){
+timo = 30;
+document.getElementById("screencal52").value = ( kek+30 );}
+else{
+document.getElementById("screencal52").value = ( -timo+30 );}
+if(kek+31<=uruu){
+timo = 31;
+document.getElementById("screencal53").value = ( kek+31 );}
+else{
+document.getElementById("screencal53").value = ( -timo+31 );}
+if(kek+32<=uruu){
+timo = 32;
+document.getElementById("screencal54").value = ( kek+32 );}
+else{
+document.getElementById("screencal54").value = ( -timo+32 );}
+if(kek+33<=uruu){
+timo = 33;
+document.getElementById("screencal55").value = ( kek+33 );}
+else{
+document.getElementById("screencal55").value = ( -timo+33 );}
+if(kek+34<=uruu){
+timo = 34;
+document.getElementById("screencal56").value = ( kek+34 );}
+else{
+document.getElementById("screencal56").value = ( -timo+34 );}
+if(kek+35<=uruu){
+timo = 35;
+document.getElementById("screencal57").value = ( kek+35 );}
+else{
+document.getElementById("screencal57").value = ( -timo+35 );}
+
+
+if(kek+36<=uruu){
+timo = 36;
+document.getElementById("screencal61").value = ( kek+36 );}
+else{
+document.getElementById("screencal61").value = ( -timo+36 );}
+
+if(kek+37<=uruu){
+timo = 37;
+document.getElementById("screencal62").value = ( kek+37 );}
+else{
+document.getElementById("screencal62").value = ( -timo+37 );}
+
+if(kek+38<=uruu){
+timo = 38;
+document.getElementById("screencal63").value = ( kek+38 );}
+else{
+document.getElementById("screencal63").value = ( -timo+38 );}
+
+if(kek+39<=uruu){
+timo = 39;
+document.getElementById("screencal64").value = ( kek+39 );}
+else{
+document.getElementById("screencal64").value = ( -timo+39 );}
+
+if(kek+40<=uruu){
+timo = 40;
+document.getElementById("screencal65").value = ( kek+40 );}
+else{
+document.getElementById("screencal65").value = ( -timo+40 );}
+
+if(kek+41<=uruu){
+timo = 41;
+document.getElementById("screencal66").value = ( kek+41 );}
+else{
+document.getElementById("screencal66").value = ( -timo+41 );}
+
+if(kek+42<=uruu){
+timo = 42;
+document.getElementById("screencal67").value = ( kek+42 );}
+else{
+document.getElementById("screencal67").value = ( -timo+42 );}
+
+
+if(kek+43<=uruu){
+timo = 43;
+document.getElementById("screencal71").value = ( kek+43 );}
+else{
+document.getElementById("screencal71").value = ( -timo+43 );}
+
+if(kek+44<=uruu){
+timo = 44;
+document.getElementById("screencal72").value = ( kek+44 );}
+else{
+document.getElementById("screencal72").value = ( -timo+44 );}
+
+if(kek+45<=uruu){
+timo = 45;
+document.getElementById("screencal73").value = ( kek+45 );}
+else{
+document.getElementById("screencal73").value = ( -timo+45 );}
+
+if(kek+46<=uruu){
+timo = 46;
+document.getElementById("screencal74").value = ( kek+46 );}
+else{
+document.getElementById("screencal74").value = ( -timo+46 );}
+
+if(kek+47<=uruu){
+timo = 47;
+document.getElementById("screencal75").value = ( kek+47 );}
+else{
+document.getElementById("screencal75").value = ( -timo+47 );}
+
+if(kek+48<=uruu){
+timo = 48;
+document.getElementById("screencal76").value = ( kek+48 );}
+else{
+document.getElementById("screencal76").value = ( -timo+48 );}
+
+if(kek+49<=uruu){
+timo = 49;
+document.getElementById("screencal77").value = ( kek+49 );}
+else{
+document.getElementById("screencal77").value = ( -timo+49 );}
+
+}
+
+</script>
+
+
+<form id="formcal"  class="c_formcal" >
+	<input class="youbi" type="text"  value="日" >
+	<input class="youbi" type="text"  value="月" >
+	<input class="youbi" type="text"  value="火" >
+	<input class="youbi" type="text"  value="水" >
+	<input class="youbi" type="text"  value="木" >
+	<input class="youbi" type="text"  value="金" >
+	<input class="youbi" type="text"  value="土" >
+<br>
+	<input class="cal0" type="text" id="screencal11" value="" >
+	<input class="cal0" type="text" id="screencal12" value="" >
+	<input class="cal0" type="text" id="screencal13" value="" >
+	<input class="cal0" type="text" id="screencal14" value="" >
+	<input class="cal0" type="text" id="screencal15" value="" >
+	<input class="cal0" type="text" id="screencal16" value="" >
+	<input class="cal0" type="text" id="screencal17" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal21" value="" >
+	<input class="cal0" type="text" id="screencal22" value="" >
+	<input class="cal0" type="text" id="screencal23" value="" >
+	<input class="cal0" type="text" id="screencal24" value="" >
+	<input class="cal0" type="text" id="screencal25" value="" >
+	<input class="cal0" type="text" id="screencal26" value="" >
+	<input class="cal0" type="text" id="screencal27" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal31" value="" >
+	<input class="cal0" type="text" id="screencal32" value="" >
+	<input class="cal0" type="text" id="screencal33" value="" >
+	<input class="cal0" type="text" id="screencal34" value="" >
+	<input class="cal0" type="text" id="screencal35" value="" >
+	<input class="cal0" type="text" id="screencal36" value="" >
+	<input class="cal0" type="text" id="screencal37" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal41" value="" >
+	<input class="cal0" type="text" id="screencal42" value="" >
+	<input class="cal0" type="text" id="screencal43" value="" >
+	<input class="cal0" type="text" id="screencal44" value="" >
+	<input class="cal0" type="text" id="screencal45" value="" >
+	<input class="cal0" type="text" id="screencal46" value="" >
+	<input class="cal0" type="text" id="screencal47" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal51" value="" >
+	<input class="cal0" type="text" id="screencal52" value="" >
+	<input class="cal0" type="text" id="screencal53" value="" >
+	<input class="cal0" type="text" id="screencal54" value="" >
+	<input class="cal0" type="text" id="screencal55" value="" >
+	<input class="cal0" type="text" id="screencal56" value="" >
+	<input class="cal0" type="text" id="screencal57" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal61" value="" >
+	<input class="cal0" type="text" id="screencal62" value="" >
+	<input class="cal0" type="text" id="screencal63" value="" >
+	<input class="cal0" type="text" id="screencal64" value="" >
+	<input class="cal0" type="text" id="screencal65" value="" >
+	<input class="cal0" type="text" id="screencal66" value="" >
+	<input class="cal0" type="text" id="screencal67" value="" >
+<br>
+	<input class="cal0" type="text" id="screencal71" value="" >
+	<input class="cal0" type="text" id="screencal72" value="" >
+	<input class="cal0" type="text" id="screencal73" value="" >
+	<input class="cal0" type="text" id="screencal74" value="" >
+	<input class="cal0" type="text" id="screencal75" value="" >
+	<input class="cal0" type="text" id="screencal76" value="" >
+	<input class="cal0" type="text" id="screencal77" value="" >
+<br>
+</form>
+</body>
+</html>
